@@ -19,6 +19,7 @@ export default function Page() {
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
       {foodItems.map((foodItem) => (
         <FoodCard
+          key={foodItem.id}
           image={foodItem.imageUrl}
           name={foodItem.name}
           description={foodItem.description}

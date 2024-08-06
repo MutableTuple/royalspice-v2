@@ -21,6 +21,7 @@ export default function Page() {
         (foodItem) =>
           !foodItem.non_vegetarian && (
             <FoodCard
+              key={foodItem.id}
               image={foodItem.imageUrl}
               name={foodItem.name}
               description={foodItem.description}

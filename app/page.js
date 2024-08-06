@@ -8,7 +8,7 @@ import DeliveryRegions from "./_components/DeliveryRegions";
 import GreatSides from "./_components/GreatSides";
 import Info from "./_components/Info";
 import LRSP from "./_components/LRSP";
-export default function page() {
+export default function Page() {
   const [isVisbleSearch, setisVisibleSearch] = useState(false);
   return (
     <div className="">
