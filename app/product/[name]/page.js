@@ -1,8 +1,9 @@
 "use client";
+
 import Navbar from "@/app/_components/Navbar";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [count, setCount] = useState(1);
   return (
     <div className="">

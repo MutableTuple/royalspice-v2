@@ -1,6 +1,6 @@
 import Navbar from "../_components/Navbar";
 
-export default function page() {
+export default function Page() {
   return (
     <div className="">
       <Navbar />

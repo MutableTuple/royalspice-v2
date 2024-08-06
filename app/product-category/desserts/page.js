@@ -3,7 +3,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import FoodCard from "@/app/_components/FoodCard";
-export default function page() {
+export default function Page() {
   const [foodItems, setFoodItems] = useState([]);
 
   useEffect(() => {

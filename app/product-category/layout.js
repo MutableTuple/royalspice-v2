@@ -1,6 +1,6 @@
 import Navbar from "../_components/Navbar";
 import NavbarComplete from "../_components/NavbarComplete";
-export default function page({ children }) {
+export default function Page({ children }) {
   return (
     <div className="">
       <NavbarComplete />
