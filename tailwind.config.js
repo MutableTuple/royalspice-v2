@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +14,24 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        dark: {
+          800: "#222222",
+        },
+        light: {
+          50: "#fff",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        ".clip-path-custom": {
+          clipPath: "polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    }),
+  ],
 };
